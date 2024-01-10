@@ -17,4 +17,6 @@ jobs:
           contains(github.event.comment.body, '/gt')
         uses: 3ru/gpt-translate@master
         with:
-          apikey: ${{ secrets.OPENAI_API_KEY }}
+          apikey: ${{ secrets.APIKEY }}
+          model: ${{ secrets.MODEL }}
+          basepath: ${{ secrets.BASEPATH }}
